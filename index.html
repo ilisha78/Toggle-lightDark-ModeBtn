@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode Toggle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .lightBgColor{
+            background-color: rgb(223, 223, 233);
+        }
+        .darkBgColor{
+            background-color: rgb(35, 35, 37);
+        }
+        .lightBtn{
+            width: 100px;
+            height: 47px;
+            padding: 5px;
+            text-align: left;
+            background-color: rgb(247, 247, 122);
+            border: none;
+            outline: none;
+            border-radius: 25px;
+        }
+        .fa-sun-o{
+            border: none;
+            align-self: center;
+            border-radius: 50%;
+            padding: auto;
+            font-size: 23px;
+            padding: 5px;
+            color: white;
+            background-color: rgb(252, 204, 114);
+        }
+        .light{
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .dark{
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: white;
+        }
+        .darkBtn{
+            width: 100px;
+            height: 47px;
+            padding: 5px;
+            text-align: left;
+            background-color: rgb(63, 70, 98);
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            text-align: right;
+        }
+        .fa-moon-o{
+            border: none;
+            align-self: center;
+            border-radius: 50%;
+            padding: auto;
+            font-size: 23px;
+            padding: 5px;
+            color: white;
+            background-color: rgb(114, 188, 252);
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="lightBgColor">
+        <label for="theme" id="text" class="light">Light</label>
+        <button id="btn" class="lightBtn" title="btn"> <i id="i" class="fa fa-sun-o"></i></button>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
